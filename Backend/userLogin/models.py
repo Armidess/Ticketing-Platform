@@ -20,18 +20,16 @@ class CustomUserManager(BaseUserManager):
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
     id = models.AutoField(primary_key=True)
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50)
     email = models.EmailField(unique=True)
     phone_number = models.CharField(max_length=15)
     is_admin = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
-    is_staff = models.BooleanField(default=False)  # Required for admin login
 
     objects = CustomUserManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['first_name', 'last_name', 'phone_number']
+    REQUIRED_FIELDS = ['name', 'phone_number']
 
     def __str__(self):
         return self.email

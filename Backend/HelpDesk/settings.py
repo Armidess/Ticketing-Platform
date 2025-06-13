@@ -36,10 +36,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'userLogin',
     'rest_framework',
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
+    'userLogin',
+    'userTicket'
 ]
 
 REST_FRAMEWORK = {

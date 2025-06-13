@@ -28,8 +28,7 @@ class SignupView(APIView):
         data = request.data
         email = data.get('email')
         password = data.get('password')
-        first_name = data.get('first_name')
-        last_name = data.get('last_name')
+        name = data.get('name')
         phone_number = data.get('phone_number')
         is_admin = data.get('is_admin', False)
 
@@ -39,8 +38,7 @@ class SignupView(APIView):
         user = CustomUser.objects.create_user(
             email=email,
             password=password,
-            first_name=first_name,
-            last_name=last_name,
+            name=name,
             phone_number=phone_number,
             is_admin=is_admin
         )
