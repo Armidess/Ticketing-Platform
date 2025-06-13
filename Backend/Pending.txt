@@ -1,7 +1,0 @@
-JWT Secret in .env
-Package json
-DB Details in .env
-Send Email/Notification on Escalation
-Audit Logs
-Admin Dashboard Highlighting Escalated Tickets
-Configurable escalation rules (via DB)
