@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
                 ('first_name', models.CharField(max_length=50)),
                 ('last_name', models.CharField(max_length=50)),
                 ('email', models.EmailField(max_length=254, unique=True)),
-                ('phone_number', models.CharField(max_length=15)),
+                ('phone', models.CharField(max_length=15)),
                 ('is_admin', models.BooleanField(default=False)),
                 ('is_active', models.BooleanField(default=True)),
                 ('is_staff', models.BooleanField(default=False)),

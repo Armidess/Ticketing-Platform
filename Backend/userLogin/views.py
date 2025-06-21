@@ -29,7 +29,7 @@ class SignupView(APIView):
         email = data.get('email')
         password = data.get('password')
         name = data.get('name')
-        phone_number = data.get('phone_number')
+        phone = data.get('phone')
         is_admin = data.get('is_admin', False)
 
         if CustomUser.objects.filter(email=email).exists():
@@ -39,7 +39,7 @@ class SignupView(APIView):
             email=email,
             password=password,
             name=name,
-            phone_number=phone_number,
+            phone=phone,
             is_admin=is_admin
         )
         return Response({'message': 'User created successfully'}, status=status.HTTP_201_CREATED)

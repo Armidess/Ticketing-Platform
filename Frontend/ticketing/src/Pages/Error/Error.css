@@ -1,0 +1,26 @@
+.error-container {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.error-title {
+  font-weight: bold;
+  font-size: 2.25rem; /* equivalent to Tailwind's text-4xl */
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.error-button {
+  background-color: #3b82f6; /* Tailwind's blue-500 */
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  display: inline-block;
+}
